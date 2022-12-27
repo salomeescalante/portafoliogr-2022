@@ -850,25 +850,44 @@ hr{
     align-items: center;
     color: #fff;
     cursor: pointer;
+    justify-content: center;
+    list-style: none;
 }
 .language-selected:before {
     content: '';
     display: inline-block;
     width: 30px;
     height: 30px;
-    background-image: url(../images/spanishFlag.png);
+    /* background-image: url(../images/spanishFlag.png); */
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 10px;
 }
 
-.language-selected.change-es:before {
-    background-image: url(../images/spanishFlag.png);
+.español img {
+    width: 30px;
+    text-decoration: none;
+    list-style: none;
 }
-.language-selected.change-en:before {
+.english img {
+    width: 30px;
+    text-decoration: none;
+    list-style: none;
+}
+.portugues img {
+    width: 30px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.language-selected.change-español:before {
+    background-image: url(../images/spanishFlag.png);
+   
+}
+.language-selected.change-english:before {
     background-image: url(../images/englishFlag.png);
 }
-.language-selected.change-br:before {
+.language-selected.change-portugues:before {
     background-image: url(../images/portFlag.png);
 }
 
@@ -907,16 +926,18 @@ hr{
     margin-right: 10px;
 }
 
-a.br:before {
+a.portugues:before {
     background-image: url(https://www.countryflags.io/br/flat/32.png);
 }
 
-a.en:before {
+a.english:before {
     background-image: url(https://www.countryflags.io/us/flat/32.png);
 }
-a.es:before {
+a.español:before {
     background-image: url(https://www.countryflags.io/es/flat/32.png);
 }
+
+
 
 .language:hover ul {
     display: block;
