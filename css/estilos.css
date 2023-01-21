@@ -151,6 +151,7 @@ body {
 
 /* About */
 
+
 .about {
     text-align: center;
     color: orange;
@@ -769,6 +770,10 @@ body {
 .dark h2{
     color: white;
 }
+
+.dark .dark_blue {
+    color: #001A49;
+}
 .dark .enlace{
     background: rgb(13, 84, 117);
 }
@@ -947,10 +952,8 @@ a.español:before {
 /* ___________ */
 .wrapper {
     height: 100%;
-    width: 100%;
-    /* background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423); */
-
-  }
+    width: 100%;    
+}
   .wrapper h1 {
     top: 50%;
     left: 50%;
@@ -974,7 +977,7 @@ a.español:before {
     left: 10%;
     animation: 4s linear infinite;
   }
-  div .dot {
+ div .dot {
     height: 10px;
     width: 10px;
     border-radius: 50px;
@@ -982,6 +985,7 @@ a.español:before {
     position: absolute;
     top: 20%;
     right: 20%;
+   
   }
   .wrapper div:nth-child(1) {
     top: 20%;
