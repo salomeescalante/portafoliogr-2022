@@ -952,7 +952,8 @@ a.español:before {
 /* ___________ */
 .wrapper {
     height: 100%;
-    width: 100%;    
+    width: 100%;   
+    overflow: hidden; 
 }
   .wrapper h1 {
     top: 50%;
@@ -966,6 +967,7 @@ a.español:before {
     font-size: 40px;
     font-weight: 888;
     text-transform: uppercase;
+    
   }
   .wrapper div {
     height: 60px;
@@ -976,6 +978,7 @@ a.español:before {
     top: 10%;
     left: 10%;
     animation: 4s linear infinite;
+   
   }
  div .dot {
     height: 10px;
@@ -985,6 +988,7 @@ a.español:before {
     position: absolute;
     top: 20%;
     right: 20%;
+    
    
   }
   .wrapper div:nth-child(1) {
@@ -1062,6 +1066,12 @@ a.español:before {
     left: 80%;
     animation: animate 9s linear infinite;
   }
+
+  @media (max-width:600px){
+    .wrapper{
+        overflow: hidden;
+    }
+}
   @keyframes animate {
     0% {
       transform: scale(0) translateY(0) rotate(70deg);
