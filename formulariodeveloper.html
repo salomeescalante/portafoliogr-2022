@@ -56,7 +56,9 @@
     
 
 	<div class="contenedor">
-		<form action="" class="form">
+
+        <a href="index.html"><button class="btn-volver">Volver</button></a><br>
+		<form action="" class="form" onSubmit={handleSubmit(submit)}>
 			<div class="form-header">
 				<h1 class="form-title">C<span>ontacto</span></h1>
 			</div>
@@ -77,19 +79,15 @@
 		<label for="servicio" class="form-label">¿Qué servicio necesitas?</label>
 		<input type="text" id="servicio" class="form-input" placeholder="Ej: Quiero una página para mi negocio.">
 
-		<label for="mensaje" class="textarea">Mensaje:</label>
+		<label for="mensaje" class="textarea texto_mensaje">Mensaje:</label>
 		<textarea id="mensaje" class="form-textarea" placeholder="Escriba su mensaje aquí"></textarea>
 
-		<input type="submit" class="btn-submit" value="Enviar">
+        <button class='btn-submit'>Enviar</button>		
         
 		</form>
-        <a href="index.html"><button class="btn-volver">Volver</button></a><br><br>
-
         
 	</div><br>
-	
-
-
+    
 	<!-- <footer class="footer">
         <section class="footer__container container">
             <nav class="nav nav--footer">
@@ -136,6 +134,8 @@
             <h3 class="footer__copyright">Derechos reservados &copy; Germán Ramírez</h3>
         </section>
     </footer> -->
+
+    
 </body><br><br>
 
 

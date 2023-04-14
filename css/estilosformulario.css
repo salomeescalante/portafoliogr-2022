@@ -16,7 +16,11 @@ body {
     display: block;
 	
 }
-
+.contenedor {
+    width: 500px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
 .contenedor .form .form-header .form-title {
    
 	font-weight: normal;
@@ -31,19 +35,21 @@ body {
 	max-width: 600px;
 	margin: auto;
 	padding: 5px 35px;
-	margin-top: 30px;
-	padding-bottom: 30px;
+	margin-top: 10px;
 	border-radius: 3px;
+   
 }
 
 .contenedor .form .form-label {
 	display: block;
 	color: #46a2fd;
 	font-size: 16px;
-	font-family: Roboto;
+	font-family: 'Poppins', sans-serif;;
 	position: relative;
 }
-
+.texto_mensaje{
+    color: #2091F9;
+}
 .contenedor .form .form-input, .form-textarea {
 
 	background: rgba(0,0,0,.7);
@@ -175,7 +181,7 @@ body {
 .dmInner * {
     -webkit-font-smoothing: antialiased;
 }
-* {
+/* * {
     border: 0 solid #333;
     scrollbar-arrow-color: #fff;
     scrollbar-track-color: #f2f2f2;
@@ -185,7 +191,7 @@ body {
     scrollbar-shadow-color: silver;
     scrollbar-darkshadow-color: silver;
     scrollbar-width: 12px;
-}
+} */
 *, :after, :before {
     box-sizing: border-box;
 }
@@ -231,9 +237,10 @@ body {
 
 .btn-volver {
 
-    
+    width: 100px;
     background: #2091F9;
     border-radius: 10px;
+    border-color: #2091F9;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -381,6 +388,18 @@ nav {
         right: 30px;
         width: 30px;
         cursor: pointer;
-    }}
+        
+    }
+
+    .btn-volver {
+        display: inline-block;
+        font-size: 15px;
+        justify-content: center;
+    }
+
+    .contenedor{
+        overflow: hidden;
+    }
+}
 
 /*FIN SECCIÓN FUTER*/
